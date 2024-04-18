@@ -8,7 +8,7 @@ print(clientes_df.head())
 print("\nSuma de valores nulos:")
 print(clientes_df.isnull().sum())
 
-def valores_faltantes(df):
+def rellenar_valores_faltantes(df):
     # RFC Generico
     df['RFC'].fillna('XAXX010101000', inplace=True)
     
@@ -18,7 +18,7 @@ def valores_faltantes(df):
     return df
 
 if __name__ == "__main__":
-    clientes_df = valores_faltantes(clientes_df)
+    clientes_df = rellenar_valores_faltantes(clientes_df)
     
 
     clientes_df.to_csv('clientes_RFCNull.csv', index=False)

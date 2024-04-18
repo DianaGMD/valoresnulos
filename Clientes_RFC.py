@@ -5,7 +5,7 @@ clientes_df = pd.read_excel('clientes.xlsx')
 print(clientes_df.head())
 
 # suma de nulos
-print("\nSuma de valores nulos por columna:")
+print("\nSuma de valores nulos:")
 print(clientes_df.isnull().sum())
 
 def valores_faltantes(df):

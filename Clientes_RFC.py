@@ -21,7 +21,7 @@ if __name__ == "__main__":
     clientes_df = valores_faltantes(clientes_df)
     
 
-    clientes_df.to_csv('clientes_clean.csv', index=False)
+    clientes_df.to_csv('clientes_RFCNull.csv', index=False)
     print("\nInformación después de limpiar:")
     print(clientes_df.info())
     print(clientes_df.head())

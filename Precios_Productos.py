@@ -9,6 +9,6 @@ def rellenar_valores_faltantes(df):
 
 df = rellenar_valores_faltantes(df)
 df.to_csv('precio_productos_tratado(limpio).csv', index=False)
-print("\nLimpieza de valores nulos::")
+print("\nLimpieza de valores nulos:")
 print(df.info())
 print(df.head())
